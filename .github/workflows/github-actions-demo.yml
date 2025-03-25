@@ -15,7 +15,15 @@ jobs:
     steps:
       - name: Check out code
         uses: actions/checkout@v4
-      - run: |
-          ls -la
-          echo ""
-          git branch -a
+
+      - name: Install norminette
+        run: |
+          sudo apt update
+          sudo apt install python3-setuptools
+          sudo apt install pipx
+          pipx install norminette
+          pipx ensurepath
+
+      - name: Check norminette
+        run: /root/.local/bin/norminette
+
