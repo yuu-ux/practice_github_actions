@@ -6,6 +6,9 @@ on:
       - opened
       - synchronize
       - reopened
+  push:
+    branches:
+      - 'test'
   workflow_dispatch:
 
 jobs:
@@ -25,5 +28,4 @@ jobs:
           pipx ensurepath
 
       - name: Check norminette
-        run: /root/.local/bin/norminette
-
+        run: norminette
