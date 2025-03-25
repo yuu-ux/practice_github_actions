@@ -26,5 +26,4 @@ jobs:
           sudo chmod +x $HOME/.local/bin/norminette
 
       - name: Check norminette
-        run: sudo $HOME/.local/bin/norminette
-
+        run: norminette
