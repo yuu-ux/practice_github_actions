@@ -23,7 +23,9 @@ jobs:
           sudo apt install pipx
           pipx install norminette
           pipx ensurepath
+          ls -la /root/.local/bin/
           chmod +x /root/.local/bin/norminette
+          ls -la /root/.local/bin/
 
       - name: Check norminette
         run: /root/.local/bin/norminette
