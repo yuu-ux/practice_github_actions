@@ -6,9 +6,6 @@ on:
       - opened
       - synchronize
       - reopened
-  push:
-    branches:
-      - 'test'
   workflow_dispatch:
 
 jobs:
