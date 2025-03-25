@@ -20,7 +20,7 @@ jobs:
         run: |
           sudo apt update
           sudo apt install python3-setuptools
-          sudo apt install pipx
+          apt install pipx
           pipx install norminette
           pipx ensurepath
           ls -la /root/.local/bin/
