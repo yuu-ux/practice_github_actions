@@ -20,13 +20,13 @@ jobs:
         run: |
           sudo apt update
           sudo apt install python3-setuptools
-          apt install pipx
+          sudo apt install pipx
           pipx install norminette
           pipx ensurepath
-          ls -la /root/.local/bin/
-          chmod +x /root/.local/bin/norminette
-          ls -la /root/.local/bin/
+          sudo ls -la /root/.local/bin/
+          sudo chmod +x /root/.local/bin/norminette
+          sudo ls -la /root/.local/bin/
 
       - name: Check norminette
-        run: /root/.local/bin/norminette
+        run: sudo /root/.local/bin/norminette
 
