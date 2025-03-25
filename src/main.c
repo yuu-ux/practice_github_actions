@@ -3,6 +3,6 @@
 int main(void)
 {
     int n = 100;
-    printf("%d\n", n);
+    printf("test: %d\n", n);
     return 0;
 }
