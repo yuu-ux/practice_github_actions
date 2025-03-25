@@ -25,5 +25,5 @@ jobs:
           pipx ensurepath
 
       - name: Check norminette
-        run: $HOME/.local/bin/norminette
+        run: sudo $HOME/.local/bin/norminette
 
